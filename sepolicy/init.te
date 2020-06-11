@@ -4,7 +4,7 @@ allow init configfs:file write;
 allow init configfs:lnk_file { create unlink };
 allow init sysfs:dir write;
 allow init self:capability sys_nice;
-
+allow init audio_device:chr_file write;
 
 # 3d_avm
 # allow init rootfs:file create_file_perms;

@@ -21,10 +21,8 @@ PRODUCT_PACKAGES += \
 	Camera
 
 PRODUCT_COPY_FILES += \
-	device/nexell/con_svma/init.con_svma.rc:root/init.con_svma.rc \
 	device/nexell/con_svma/init.con_svma.usb.rc:root/init.con_svma.usb.rc \
 	device/nexell/con_svma/ueventd.con_svma.rc:root/ueventd.con_svma.rc \
-	device/nexell/con_svma/init.recovery.con_svma.rc:root/init.recovery.con_svma.rc \
 	device/nexell/con_svma/busybox:system/bin/busybox \
 	device/nexell/con_svma/hwreg_cmd:system/bin/hwreg_cmd \
 	device/nexell/con_svma/memtester:system/bin/memtester \
@@ -32,11 +30,9 @@ PRODUCT_COPY_FILES += \
 
 ifeq ($(QUICKBOOT), 1)
 PRODUCT_COPY_FILES += \
-	device/nexell/con_svma/fstab.con_svma_svm:root/fstab.con_svma \
 	device/nexell/con_svma/media_profiles_quick.xml:system/etc/media_profiles.xml
 else
 PRODUCT_COPY_FILES += \
-	device/nexell/con_svma/fstab.con_svma:root/fstab.con_svma \
 	device/nexell/con_svma/media_profiles.xml:system/etc/media_profiles.xml
 
 # tinyalsa

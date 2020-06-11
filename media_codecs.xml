@@ -131,6 +131,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="block-size" value="16x16" />
             <Limit name="bitrate" range="1-40000000" />
         </MediaCodec>
+<!--
         <MediaCodec name="OMX.NX.VIDEO_DECODER.wmv" type="video/x-ms-wmv">
             <Limit name="size" min="32x32" max="1920x1088" />
             <Limit name="alignment" value="2x2" />
@@ -149,6 +150,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="block-size" value="16x16" />
             <Limit name="bitrate" range="1-45000000" />
         </MediaCodec>
+-->
         <MediaCodec name="OMX.NX.VIDEO_DECODER.flv" type="video/x-flv">
             <Limit name="size" min="32x32" max="1920x1088" />
             <Limit name="alignment" value="2x2" />

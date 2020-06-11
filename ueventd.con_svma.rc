@@ -17,6 +17,7 @@
 /dev/mali		0666	system	system
 /dev/sw_sync	0666	system	system
 /dev/ion		0666	system	system
+/dev/ttySAC*	0666	system	system
 /dev/video*		0666	system	system
 /dev/ttyAMA*	0666	system	system
 /dev/scaler		0666	system	system
