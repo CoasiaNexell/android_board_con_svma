@@ -249,6 +249,10 @@ WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_P2P     := ""
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
+#gralloc
+#use nx-video-api
+BOARD_GRALLOC_ALIGN_FACTOR := 128
+
 #recovery
 TARGET_RECOVERY_FSTAB := device/nexell/con_svma/nxp4330_con_svma/fstab.con_svma
 

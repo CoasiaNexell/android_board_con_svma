@@ -246,6 +246,10 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_DRIVER_MODULE_NAME     := bcmdhd
 WIFI_DRIVER_MODULE_PATH     := "/vendor/lib/modules/bcmdhd.ko"
 
+#gralloc
+#use nx-video-api
+BOARD_GRALLOC_ALIGN_FACTOR := 128
+
 #recovery
 TARGET_RECOVERY_FSTAB := device/nexell/con_svma/s5p6818_con_svma_auto/fstab.con_svma
 

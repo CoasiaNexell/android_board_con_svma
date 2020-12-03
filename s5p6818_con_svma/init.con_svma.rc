@@ -40,6 +40,10 @@ on boot
     # for omx videobufcopy (0:Disable, 1:Enable)
     setprop videobufcopy.mode 0
 
+    # for use nexell mkvextractor (0:aosp, 1:nexell)
+    # use setprop nxmkv.mode 1, getprop nxmkv.mode
+    setprop nxmkv.mode 0
+
 on boot && property:ro.vendor.ota_update_verifier=true
     exec_start update_verifier_nonencrypted
 

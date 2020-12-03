@@ -29,6 +29,10 @@ on boot
     # for omx videobufcopy (0:Disable, 1:Enable)
     setprop videobufcopy.mode 0
 
+    # for use nexell mkvextractor (0:aosp, 1:nexell)
+    # use setprop nxmkv.mode 1, getprop nxmkv.mode
+    setprop nxmkv.mode 0
+
     # nx_vpu, sdio module
     insmod /vendor/lib/modules/nx_vpu.ko
     insmod /vendor/lib/modules/dw_mmc-nexell_sdio_1.ko
