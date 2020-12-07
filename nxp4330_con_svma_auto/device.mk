@@ -200,6 +200,11 @@ PRODUCT_PACKAGES += \
 EN_FFMPEG_EXTRACTOR := false
 EN_FFMPEG_AUDIO_DEC := false
 
+# video only seek
+# This patch has been modified to seek only video
+#  when using setSurface() (home->app)
+EN_VIDEO_ONLY_SEEK := false
+
 # omx
 PRODUCT_PACKAGES += \
     libstagefrighthw \
