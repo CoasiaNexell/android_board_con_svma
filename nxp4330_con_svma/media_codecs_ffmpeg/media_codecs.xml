@@ -78,16 +78,23 @@ Only the three quirks included above are recognized at this point:
 <MediaCodecs>
     <Include href="media_codecs_google_audio.xml" />
     <Decoders>
-        <!-- Nexell Audio Decoder for FFMPEG -->
+		<!--
+			FFMPEG Audio Decoder Components
+				These codecs are omxil component using ffmpeg as audio codecs.
+				To use these codecs, EN_FFMPEG_AUDIO_DEC in device.mk and 
+				boardconfig.mk must be set to true.
+		-->
+		<!--
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.ac3" type="audio/ac3" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.ra" type="audio/ra" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.dts" type="audio/dts" />
+        <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.wma" type="audio/x-ms-wma" />
+		-->
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.flac" type="audio/flac" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.mpeg" type="audio/mpeg" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.mpegl1" type="audio/mpeg-L1" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.mpegl2" type="audio/mpeg-L2" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.ape" type="audio/ape" />
-        <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.wma" type="audio/x-ms-wma" />
 
         <!-- Nexell Video Decoder -->
         <MediaCodec name="OMX.NX.VIDEO_DECODER.3gpp" type="video/3gpp">
@@ -115,6 +122,13 @@ Only the three quirks included above are recognized at this point:
             <Limit name="block-size" value="16x16" />
             <Limit name="bitrate" range="1-40000000" />
         </MediaCodec>
+		<!--
+			Video Decoder Components
+				The codecs below are video components that require licensing.
+				These codecs should not be installed in the product without a license.
+				And you may need FFMPEG Extractor to use some of the codecs below.
+		-->
+		<!--
         <MediaCodec name="OMX.NX.VIDEO_DECODER.mp43" type="video/mp43">
             <Limit name="size" min="32x32" max="1920x1088" />
             <Limit name="alignment" value="2x2" />
@@ -145,6 +159,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="block-size" value="16x16" />
             <Limit name="bitrate" range="1-45000000" />
         </MediaCodec>
+		-->
         <MediaCodec name="OMX.NX.VIDEO_DECODER.flv" type="video/x-flv">
             <Limit name="size" min="32x32" max="1920x1088" />
             <Limit name="alignment" value="2x2" />
