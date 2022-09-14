@@ -1,0 +1,6 @@
+# micom.bin
+
+20190731
+	ver : 1.0.0
+	- Micom(STM32).
+	- setting MAX9286 register.

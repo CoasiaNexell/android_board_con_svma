@@ -1,0 +1,8 @@
+allow platform_app broadcastradio_service:service_manager find;
+allow platform_app unlabeled:dir { write read getattr open search };
+allow platform_app unlabeled:filesystem getattr;
+allow platform_app unlabeled:dir write;
+allow platform_app unlabeled:file { write getattr };
+allow platform_app unlabeled:dir write;
+allow platform_app unlabeled:file write;
+allow platform_app system_app_data_file:dir getattr;

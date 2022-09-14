@@ -1,0 +1,1 @@
+allow shell statsd_exec:file getattr;

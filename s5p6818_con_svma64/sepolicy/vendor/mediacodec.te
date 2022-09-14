@@ -1,0 +1,4 @@
+allow mediacodec system_file:dir { read open };
+allow mediacodec sysfs_video4linux:dir { search };
+allow mediacodec sysfs_video:dir { search };
+allow mediacodec sysfs_video:file { read open getattr };

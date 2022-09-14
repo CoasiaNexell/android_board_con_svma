@@ -1,0 +1,13 @@
+allow vold vendor_file:dir { read open ioctl };
+allow vold cache_backup_file:dir { getattr setattr };
+allow vold kernel:system module_request;
+allow vold mnt_media_rw_stub_file:dir { read open };
+allow vold unlabeled:filesystem { mount unmount };
+allow vold self:capability { setuid setgid };
+allow vold nx_block_device:blk_file getattr;
+allow vold nx_block_device:blk_file getattr;
+allow vold self:capability { setuid setgid };
+allow vold storage_stub_file:dir { read open write add_name search };
+allow vold storaged_data_file:dir { getattr setattr };
+allow vold fs_support_exec:file { execute_no_trans execute read open getattr };
+allow vold self:capability sys_resource;

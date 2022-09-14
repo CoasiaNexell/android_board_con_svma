@@ -1,0 +1,1 @@
+allow uncrypt nx_block_device:blk_file { read write ioctl open };

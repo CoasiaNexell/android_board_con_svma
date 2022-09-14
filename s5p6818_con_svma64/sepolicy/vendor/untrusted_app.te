@@ -1,0 +1,2 @@
+allow untrusted_app block_device:dir getattr;
+allow untrusted_app nx_block_device:blk_file getattr;

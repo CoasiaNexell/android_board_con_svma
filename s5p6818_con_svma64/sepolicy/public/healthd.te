@@ -1,0 +1,1 @@
+dontaudit healthd self:capability dac_override;

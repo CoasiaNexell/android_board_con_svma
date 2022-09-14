@@ -1,0 +1,4 @@
+type boot_car_service_created_prop, property_type;
+type thermal_prop, property_type;
+type post_boot_prop, property_type;
+type vendor_charge_prop, property_type;

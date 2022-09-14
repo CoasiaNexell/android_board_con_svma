@@ -1,0 +1,1 @@
+allow installd fingerprint_vendor_data_file:file { read };

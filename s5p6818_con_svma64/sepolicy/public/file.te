@@ -1,0 +1,11 @@
+type hctosys_file, fs_type, sysfs_type;
+type cpu_file, fs_type, proc_type;
+type slabinfo_file, fs_type, proc_type;
+type keylayout_file, file_type, vendor_file_type;
+type keychar_file, file_type, vendor_file_type;
+type procfs_inspector, domain;
+type sysfs_video4linux, fs_type, sysfs_type;
+type sysfs_camerasensor, fs_type, sysfs_type;
+type sysfs_v4l-subdev, fs_type, sysfs_type;
+type sysfs_video, fs_type, sysfs_type;
+type fs_support_exec, exec_type, file_type;

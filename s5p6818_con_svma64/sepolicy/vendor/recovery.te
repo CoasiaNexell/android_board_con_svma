@@ -1,0 +1,1 @@
+allow recovery gpu_device:chr_file { create open read write execute ioctl };

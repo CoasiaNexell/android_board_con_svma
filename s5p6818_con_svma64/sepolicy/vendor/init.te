@@ -1,0 +1,14 @@
+allow init kernel:system module_request;
+allow init nativetest_data_file:dir { read getattr open };
+allow init nativetest_data_file:file getattr;
+allow init cpu_file:file write;
+allow init slabinfo_file:file setattr;
+allow init console_device:chr_file { read write };
+allow init nx_block_device:blk_file relabelto;
+allow init nx_block_device:lnk_file relabelto;
+allow init tmpfs:lnk_file create;
+allow init nativetest_data_file:dir search;
+allow init app_data_file:dir getattr;
+allow init system_app_data_file:dir getattr;
+allow init misc_logd_file:dir relabelfrom;
+allow init misc_logd_file:file relabelfrom;

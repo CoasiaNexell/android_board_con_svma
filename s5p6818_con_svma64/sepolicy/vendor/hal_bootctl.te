@@ -1,0 +1,10 @@
+# These are the permissions required to use the Boot Control HAL implemented
+
+# partition names in the block_device directory /dev/block/.../by-name
+allow hal_bootctl block_device:dir r_dir_perms;
+
+# Get attributes on all the A/B partitions.
+allow hal_bootctl {
+  boot_block_device
+  system_block_device
+}:blk_file { getattr };

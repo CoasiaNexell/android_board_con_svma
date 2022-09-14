@@ -1,0 +1,6 @@
+typeattribute procfs_inspector coredomain;
+type procfs_inspector_exec, exec_type, file_type;
+
+init_daemon_domain(procfs_inspector)
+
+allow procfs_inspector servicemanager:binder { call transfer };

@@ -1,0 +1,16 @@
+type usbmuxd, domain, coredomain, mlstrustedsubject;
+type usbmuxd_exec, exec_type, file_type;
+
+init_daemon_domain(usbmuxd)
+
+allow usbmuxd rootfs:lnk_file getattr;
+allow usbmuxd self:capability { sys_resource }; # dac_override neverallow
+allow usbmuxd self:netlink_kobject_uevent_socket { read create bind setopt };
+allow usbmuxd system_data_file:file { open lock read getattr }; # write unlink create neverallow
+allow usbmuxd system_data_file:dir { remove_name write add_name read open create };
+allow usbmuxd system_data_file:sock_file { unlink create setattr };
+allow usbmuxd sysfs:file { getattr }; # read open neverallow
+allow usbmuxd sysfs:dir { open read };
+allow usbmuxd usb_device:dir { open read search };
+allow usbmuxd usb_device:chr_file { read write open ioctl };
+

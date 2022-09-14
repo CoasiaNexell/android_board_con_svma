@@ -1,0 +1,2 @@
+allow bluetooth storage_stub_file:dir getattr;
+dontaudit bluetooth netd_service:service_manager find;

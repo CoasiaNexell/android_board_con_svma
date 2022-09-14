@@ -1,0 +1,2 @@
+add_lunch_combo s5p6818_con_svma64-userdebug
+

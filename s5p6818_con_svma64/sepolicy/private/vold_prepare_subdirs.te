@@ -1,0 +1,2 @@
+allow vold_prepare_subdirs install_data_file:file getattr;
+allow vold_prepare_subdirs property_data_file:file getattr;

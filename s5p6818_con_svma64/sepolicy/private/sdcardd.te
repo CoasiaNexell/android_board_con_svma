@@ -1,0 +1,2 @@
+allow sdcardd fingerprint_vendor_data_file:file { read };
+allow sdcardd kernel:system module_request;

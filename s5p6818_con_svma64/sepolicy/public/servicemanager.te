@@ -1,0 +1,3 @@
+allow servicemanager procfs_inspector:dir { search read };
+allow servicemanager procfs_inspector:file { read open };
+allow servicemanager procfs_inspector:process getattr;

@@ -1,0 +1,5 @@
+allow crash_dump system_data_file:file { getattr open };
+allow crash_dump app_data_file:file { read getattr open };
+allow crash_dump resourcecache_data_file:file { read open };
+allow crash_dump vold:process ptrace;
+dontaudit crash_dump keystore:process ptrace;

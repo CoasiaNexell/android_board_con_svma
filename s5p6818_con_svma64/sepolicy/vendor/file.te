@@ -1,0 +1,22 @@
+type vendor_toolbox_nx_exec, exec_type, vendor_file_type, file_type;
+type sysfs_hctosys_file, sysfs_type, fs_type;
+type sysfs_life_time, sysfs_type, fs_type;
+type sysfs_pre_eol_info, sysfs_type, fs_type;
+type sysfs_geardetect, sysfs_type, fs_type;
+type sysfs_cpuid, sysfs_type, fs_type;
+
+# /data
+type perfd_data_file, file_type, data_file_type, core_data_file_type;
+
+# /sys
+type sysfs_perf, sysfs_type, fs_type;
+type sysfs_power_management, sysfs_type, fs_type;
+type sysfs_soc, sysfs_type, fs_type, mlstrustedobject;
+
+# debugfs
+type debugfs_rpm, debugfs_type, fs_type;
+type debugfs_sps, debugfs_type, fs_type;
+type debugfs_wlan, debugfs_type, fs_type;
+
+# /proc
+type proc_kernel_sched, fs_type, proc_type;
